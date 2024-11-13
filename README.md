@@ -1,6 +1,3 @@
-- 👋 Hi, I’m @VhonwantstobecomeWebDev
-- 👀 I’m interested in Web Developer
-- 🌱 I’m currently learning Web Developer, and im college student
 
 
 <!---
