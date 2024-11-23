@@ -1,0 +1,344 @@
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body{
+    
+    display: flex;
+    font-family: sans-serif;
+    background-image: url(reborn.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+
+  }
+  .logo{
+      display:inline-block;
+      padding: 0px 1em;
+      color: rgb(218, 218, 218);
+      font-family: 'Playfair Display';
+      position: relative;
+      top:5px;
+
+  }
+  header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+
+  .navbar {
+    position: sticky;
+    background-color:#291C03;
+    opacity: 0.9;
+    overflow: hidden;
+    top: 0px;
+    z-index: 1000;
+    
+    
+    
+  }
+  .ahome{
+    background-color: #fefefe;;
+  }
+
+  .navbar a {
+    z-index: 10;
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  a.active,a:hover{
+    background: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+ 
+  .navbar a:hover {
+    transition: ease 0.5s;
+    background-color: #000000;
+    color: white;
+  }
+
+
+  .menu-icon {
+    display: none;
+    float: right;
+    padding:0px 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+  .menu-items {
+    display: flex;
+    float: right;
+  }
+
+ 
+  @media (max-width: 968px) {
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      
+      overflow: hidden;
+    }
+
+  
+    .menu-icon {
+      display: block;
+    }
+
+    
+    .menu-items.active {
+      display: flex;
+    }
+    .navbar a {
+      text-align: center;
+      width: 100%;
+    }
+    
+  }
+  .body1{
+    margin:auto;
+    margin-bottom: 50px;
+    border-radius: 2em;
+    float: left;
+    margin-right: 10px;
+    margin-top: 30px;
+  
+  }
+  .body2{
+    margin:auto;
+    margin-right:10px ;
+    margin-bottom: 50px;
+    border-radius: 2em;
+    float: left;
+  }
+  .logo1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: auto;
+      
+  } 
+
+  
+  
+  .body1 .h12,.h31{
+    color:  #fefefe;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+  }
+  .h11{
+    font-size: 25px;
+    color: #fefefe;
+    font-family: Arial, sans-serif;
+  }
+  .h32{
+    font-size: 25px;
+    color: #fefefe;
+    font-family:  Arial, Helvetica, sans-serif;
+  }
+
+
+@media (max-width: 768px) {
+    .carousel {
+        border-radius: 5px;
+    }
+
+    .carousel-slide img {
+        object-fit: contain; 
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        width: 100%; 
+        border-radius: 0; 
+    }
+}
+.txt-1{
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(0,0,0, 0.2);
+  font-family: verdana;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+.Product-1 {
+  background-color: rgba(0,0,0, 0.3);
+  width: 100%;
+  display: flex;
+  padding-left: 20px;
+  margin: auto;
+}
+@media (max-width: 500px){
+  .h12{
+    font-size: 15px;
+  }
+  .h31{
+    font-size: 15px ;
+  }
+  .h11{
+    font-size: 15px;
+    
+  }
+  .h32{
+    font-size: 15px;
+  }
+@media (max-width: 500px) {
+  .h11{
+    font-size: 30px;
+  }
+  .h12{
+    font-size: 40px;
+  }
+  
+}
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-box {
+  background-color: rgba(49, 48, 48, 0.8); 
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display';
+}
+
+.input-group {
+  margin-bottom: 15px;
+  font-family: 'Playfair Display';
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ccc;
+  font-family: 'Playfair Display';
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #000000;
+  color: #fefefe;
+  font-family: 'Playfair Display';
+}
+
+.input-group input:focus {
+  border-color: #ffffff;
+  outline: none;
+  font-family: 'Playfair Display';
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group .btn {
+  background-color: #fefefe; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 16px;
+  color: black;
+}
+
+.button-group .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.error-message {
+  color: rgb(144, 10, 10);
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+      width: 90%;
+  }
+
+  .button-group .btn {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+.LoginText{
+  color: #fefefe;
+}
+@media (max-width: 500px){
+  
+  .logo1{
+    width: 100%;
+    position: relative;
+    
+    transition: 1s;      
+  }
+  
+  .login-box{
+    position: relative;
+    
+    bottom: 150px;
+    }
+    
+  }
+ .Aview{
+  position: relative;
+  color: #fefefe;
+  border-radius: 10px;
+  text-decoration: none;
+  top: 60px;
+  background-color: #565656;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Playfair Display';
+ }
+ .Aview:hover{
+  background-color: #fefefe;
+  color: black;
+ }
+ 
+

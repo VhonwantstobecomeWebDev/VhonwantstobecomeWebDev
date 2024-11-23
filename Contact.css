@@ -1,0 +1,414 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    display: flex;
+    font-family: sans-serif;
+    background-image: url(reborn.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    
+  }
+  .logo{
+      display:inline-block;
+      padding: 0px 1em;
+      color: rgb(218, 218, 218);
+      font-family: 'Playfair Display';
+      position: relative;
+      top:5px;
+
+  }
+  header{
+    position: sticky;
+    top: 0px;
+  }
+  
+  .navbar {
+    position: sticky;
+    background-color:#291C03;
+    opacity: 0.9;
+    overflow: hidden;
+    top: 0;
+    z-index: 10;
+    
+    
+    
+    
+  }
+
+  
+  .navbar a {
+    z-index: 10;
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .acontact{
+    background-color: #fefefe;
+    
+  }
+ 
+  a.active,a:hover{
+    background: rgb(244, 244, 244);
+    transition: .5s;
+}
+
+ 
+  .navbar a:hover {
+    transition: ease 0.5s;
+    background-color: #000000;
+    color: white;
+  }
+
+  
+  .menu-icon {
+    display: none;
+    float: right;
+    padding:0px 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+  .menu-items {
+    display: flex;
+    float: right;
+  }
+
+  
+  @media (max-width: 968px) {
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      
+      overflow: hidden;
+    }
+
+    
+    .menu-icon {
+      display: block;
+    }
+
+    
+    .menu-items.active {
+      display: flex;
+    }
+    .navbar a {
+      text-align: center;
+      width: 100%;
+    }
+
+    
+    }
+.content1{
+            justify-content: center; 
+            align-items: center; 
+            height: 92vh;
+            width: 100vw; 
+           
+            color: white;
+            font-size: 2rem; 
+            text-align: center; 
+}
+
+.text-container {
+    padding: 20px; 
+    width: 100%; 
+    
+    text-transform: uppercase;
+}
+
+.responsive-text {
+    font-family: Arial Black (sans-serif);
+    font-size: 110px;
+    color: #fefefe;
+    text-align: left;
+    margin: 0; 
+    font-weight: 900;
+}
+
+@media (max-width: 1345px) {
+    .responsive-text {
+        font-size: 50px;
+        transition: 0.5;
+    }
+}
+
+    
+
+.contact-card {
+    width: 300px; 
+    padding: 20px;
+    background-color: black; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 10px; 
+
+    text-align: center;
+}
+
+
+
+@keyframes marquee {
+    0% { transform: translateX(100%); } 
+    100% { transform: translateX(-100%); } 
+}
+
+.phone-icon {
+    font-size: 50px; 
+    color:#ffffff; 
+    margin: 10px 0; 
+}
+
+.phone-number {
+    font-size: 24px; 
+    color: #ffffff; 
+}
+
+@media (max-width: 600px) {
+    .contact-card {
+        width: 90%; 
+    }
+
+    .phone-number {
+        font-size: 20px; 
+    }
+}
+.contact-card {
+    width: auto;
+    padding: 20px;
+    background-color: #291C03;
+    border-radius: 10px;
+    text-align: center; 
+    opacity: 0.7;
+}
+
+.contact-info {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.phone-number {
+    font-size: 20px; 
+    color: #fefefe; 
+}
+
+.email {
+    flex: 1; 
+    text-align: center; 
+    font-size: 20px; 
+    color: #fefefe; 
+}
+
+.social-media {
+    display: flex; 
+    justify-content: flex-end; 
+    margin: 0px;
+    
+}
+.icon:hover{
+    background-color: white;
+    color: black;
+    border-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icon {
+    font-size: 40px; 
+    color: #fefefe; 
+
+    
+    
+    margin: 0px 10px; 
+
+}
+
+
+
+@media (max-width: 600px) {
+    .contact-card {
+        width: 90%; 
+    }
+
+    .phone-number,
+    .email {
+        font-size: 18px; 
+    }
+
+    .icon {
+        font-size: 30px; 
+    }
+}
+.text-container2 {
+    font-family: Arial Black(sans-serif);
+    padding: 20px; 
+    width: 100%; 
+    
+    text-transform: uppercase;
+}
+
+.responsive-text2 {
+    font-size: 120px; 
+    color: #fefefe; 
+    text-align: right; 
+    margin: 0; 
+    font-weight: 900;
+}
+.logoReborn1{
+    float: left;
+    width: auto;
+  height: auto;
+  height: 400px;
+}
+@media (max-width: 600px) {
+    .responsive-text2 {
+        font-size: 50px; 
+    }
+}
+@media (max-width : 1345px) {
+    .responsive-text2 {
+        font-size: 100px;
+    }
+    .responsive-text{
+        font-size: 100px;
+    }
+}
+
+    
+
+
+@media (max-width : 500px){
+    .responsive-text{
+        font-size: 30px;
+    }
+    .responsive-text2{
+        font-size: 40px;
+    }
+    .logoReborn1{
+        width: 100%;
+    }
+    .contact-card{
+        width: 100%;
+    }
+    .logoReborn1{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media (max-width: 1024px) {
+    .responsive-text{
+        font-size: 70px;
+    }
+    .responsive-text2{
+        font-size: 70px;
+    }
+    .logoReborn1{
+        width: 100%;
+    }
+    .contact-card{
+        width: 100%;
+    }
+    .logoReborn1{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media (max-width: 820px) {
+    .responsive-text{
+        font-size: 60px;
+    }
+    .responsive-text2{
+        font-size: 60px;
+    }
+    .logoReborn1{
+        width: 100%;
+    }
+    .contact-card{
+        width: 100%;
+    }
+    .logoReborn1{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media (max-width: 805px) {
+    .responsive-text2{
+        font-size: 60px;
+    }
+    .responsive-text{
+        font-size: 60px;
+    }
+    
+}
+
+@media (max-width: 727px) {
+    .responsive-text2{
+        font-size: 50px;
+    }
+    .responsive-text{
+        font-size: 50px;
+    }
+    
+}
+@media (max-width: 652px){
+    .responsive-text2{
+        font-size: 20px;
+    }
+    .responsive-text{
+        font-size: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .responsive-text2{
+        font-size: 40px;
+    }
+    .responsive-text{
+        font-size: 40px;
+    }
+    
+}
+@media  (max-width: 500px){
+    .responsive-text2{
+        font-size: 30px;
+    }
+    .responsive-text{
+        font-size: 30px;
+    }
+    .phone-number{
+        font-size: 12px;
+    }
+    .email{
+        font-size: 10px;
+    }
+    
+}
+.h2phone{
+    float: left;
+    font-family: Arial Black(sans-serif);
+    font-weight: lighter;
+}
+.h2Email{
+    float: right;
+    font-family: Arial Black(sans-serif);
+    font-weight: lighter;
+}
+.h2Social{
+    font-weight: lighter;
+}
